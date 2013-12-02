@@ -1,0 +1,23 @@
+
+body {
+    padding: 30px;
+    line-height: 30px;
+}
+
+.case {
+    margin: 20px;
+}
+
+.editable {}
+
+* {
+    box-sizing: border-box;
+    box-shadow: 0 0 2px hsl(0, 0%, 85%);
+}
+
+input {
+    min-width: 300px;
+    line-height: 30px;
+}
+
+textarea {}
