@@ -22,9 +22,9 @@
               end = smaller(el.selectionEnd, text.length);
               this.val(text);
               el.selectionStart = start;
-              return el.selectionEnd = end;
+              el.selectionEnd = end;
             } else {
-              return this.val(text);
+              this.val(text);
             }
             break;
           case this.prop('contenteditable') !== "true":
@@ -40,24 +40,25 @@
                 newRan = document.createRange();
                 newRan.setStart(el.firstChild, start);
                 newRan.setEnd(el.firstChild, end);
-                return sel.addRange(newRan);
+                sel.addRange(newRan);
               } else {
-                return this.text(text);
+                this.text(text);
               }
             } else {
-              return this.text(text);
+              this.text(text);
             }
             break;
           default:
-            return this.text(text);
+            this.text(text);
         }
       } else {
         if (_ref1 = this.prop('tagName'), __indexOf.call(inputs, _ref1) >= 0) {
-          return this.val(text);
+          this.val(text);
         } else {
-          return this.text(text);
+          this.text(text);
         }
       }
+      return this;
     }
   });
 

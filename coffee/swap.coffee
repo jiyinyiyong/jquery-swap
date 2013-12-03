@@ -39,3 +39,4 @@ jQuery.fn.extend
         @val text
       else
         @text text
+    @

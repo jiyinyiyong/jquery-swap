@@ -8,7 +8,9 @@ body {
     margin: 20px;
 }
 
-.editable {}
+.editable {
+    line-height: 30px;
+}
 
 * {
     box-sizing: border-box;
@@ -16,8 +18,13 @@ body {
 }
 
 input {
-    min-width: 300px;
+    width: 100%;
     line-height: 30px;
+    min-height: 80px;
 }
 
-textarea {}
+textarea {
+    width: 100%;
+    min-height: 80%;
+    line-height: 30px;
+}
